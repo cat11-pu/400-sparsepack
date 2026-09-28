@@ -1,0 +1,16 @@
+{
+  "budget": 2,
+  "fields": [["a", 1], ["b", 2], ["c", 3]],
+  "bad_values_code": "E_BAD_VALUES",
+  "bad_index_code": "E_BAD_INDEX",
+  "no_pack_code": "E_NO_PACK",
+  "event_error_code": "E_BAD_EVENT",
+  "state": { "packs": [], "unpacks": [], "ledger": [], "applied": [] },
+  "events": [
+    { "id": 1, "kind": "pack", "values": [1, 5, 3] },
+    { "id": 2, "kind": "pack", "values": [1, 2, 3] },
+    { "id": 3, "kind": "unpack", "index": 1 },
+    { "id": 4, "kind": "pack", "values": [4, 2, 7] },
+    { "id": 5, "kind": "unpack", "index": 2 }
+  ]
+}
